@@ -1,6 +1,8 @@
 # form
 
-> A Vue.js project
+> Credit card demo with Vue.js
+
+![Drag Racing](https://raw.githubusercontent.com/1k2k/credit-card-demo/master/src/assets/img/components/product-photo/Screen%20Shot%202018-08-23%20at%2012.18.48%20AM.png)
 
 ## Build Setup
 
