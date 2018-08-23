@@ -1,0 +1,66 @@
+$icon-size: 50px;
+
+.share {
+  display: block;
+
+  & .ya-share2__item:hover {
+    opacity: 1;
+  }
+
+  & .ya-share2__item .ya-share2__badge {
+    // @include size(rem(50px));
+    padding: rem(8px);
+    border-radius: 0;
+  }
+
+  & .ya-share2__item .ya-share2__icon {
+    @include size(rem(34px));
+  }
+  
+  & .ya-share2__list_direction_horizontal > .ya-share2__item {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: rem(10px);
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  & .ya-share2__list_direction_horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+
+  & .ya-share2__item_service_odnoklassniki {
+    & .ya-share2__badge {
+      background-color: #fa931f;
+    }
+  }
+
+  & .ya-share2__item {
+    &:hover {
+      & .ya-share2__badge {
+        background-color:$color-red;
+      }
+    }
+  }
+}
+
+.share_next {
+  & .ya-share2__list_direction_horizontal > .ya-share2__item {
+    margin-right: 2px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  & .ya-share2__item .ya-share2__icon {
+    @include size(rem(34px));
+    
+    @include mq('phablet', max) {
+      @include size(rem(30px));
+    }
+  }
+}

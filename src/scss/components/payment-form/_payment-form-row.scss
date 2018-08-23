@@ -1,0 +1,16 @@
+.payment-form-row {
+  display: flex;
+  align-items: center;
+  @include bottom(rem(16px));
+  &__item {
+    @include right(rem(16px));
+    width: 100%;
+  }
+  &_justify {
+    justify-content: space-between;
+    .payment-form-row__item {
+      display: inline-block;
+      width: auto;
+    }
+  }
+}

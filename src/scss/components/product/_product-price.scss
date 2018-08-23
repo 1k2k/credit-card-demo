@@ -1,0 +1,9 @@
+.product-price {
+  font-size: rem(13px);
+  letter-spacing: 1px;
+  position: relative;
+  top: rem(-12px);
+  &_normal {
+    top: auto;
+  }
+}

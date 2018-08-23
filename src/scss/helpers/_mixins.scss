@@ -1,0 +1,120 @@
+@function rem($size, $unit: rem) {
+  $remSize: $size / $default-font-size;
+  @return #{$remSize}$unit;
+}
+
+@mixin scrollbar-hide {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  &::-moz-scrollbar {
+    display: none;
+  }
+  &::-ms-scrollbar {
+    display: none;
+  }
+}
+
+@mixin input-placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type==max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+@mixin container($width: $container-width) {
+  width: rem($width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: rem($container-padding-mobile);
+  padding-right: rem($container-padding-mobile);
+  @media only screen and (max-width: $width) {
+    width: 100%;
+  }
+  @include mq("tablet", max) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@mixin content($padding-size: rem(100px)) {
+  padding-left: $padding-size;
+  padding-right: $padding-size;
+  @include mq('tablet', max) {
+    padding-left: $container-padding-mobile;
+    padding-right: $container-padding-mobile;
+  }
+}
+
+@mixin right($width) {
+  margin-right: #{$width};
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@mixin bottom($px) {
+  margin-bottom: #{$px};
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@mixin size($w, $h: $w) {
+  width: $w;
+  height: $h;
+}
+
+@mixin cutWord($display:block) {
+  display: $display;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin hover() {
+  transition: opacity 200ms;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+@mixin absoluteCenter() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin card() {
+  background-color: #fff;
+  border-radius: rem(10px);
+  box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}

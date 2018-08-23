@@ -1,0 +1,19 @@
+.product-info {
+  &__item {
+    // @include bottom(rem(1px));
+    span {
+      display: block;
+      font-size: rem(8px);
+      color: $color-grey;
+    }
+    &_headline {
+      span {
+        display: block;
+        font-size: rem(11px);
+        font-weight: 500;
+        color: #000;
+      }
+    }
+
+  }
+}

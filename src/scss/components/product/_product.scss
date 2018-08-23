@@ -1,0 +1,13 @@
+.product {
+  display: flex;
+  align-items: center;
+  &__item {
+    @include right(rem(10px));
+    width: 100%;
+    &_photo, &_price {
+      width: auto;
+      flex: none;
+    }
+
+  }
+}

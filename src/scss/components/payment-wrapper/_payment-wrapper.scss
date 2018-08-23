@@ -1,0 +1,37 @@
+.payment-wrapper {
+  @include card();
+  background-color: #fbfbfc;
+  display: flex;
+  height: rem(354px);
+  overflow: hidden;
+  @include mq('tablet', max) {
+    height: auto;
+  }
+  &__item {
+    &_steps, &_cart {
+      padding: rem($card-padding);
+      @include mq('tablet', max) {
+        display: none;
+      }
+    }
+    &_cart {
+      height: 100%;
+      width: rem($payment-card-width);
+    }
+    &_form {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: rem($payment-card-width);
+      @include mq('tablet', max) {
+        position: static;
+        top: auto;
+        transform: none;
+        left: auto;
+      }
+    }
+    &_steps {
+      margin-left: $payment-form-width;
+    }
+  }
+}

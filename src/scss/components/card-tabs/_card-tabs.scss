@@ -1,0 +1,40 @@
+.card-tabs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: rem(18px);
+  box-shadow: 0 0 0 2px $color-blue;
+  height: rem(25px);
+
+  &__item {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    // padding: 5px;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      font-size: rem(10px);
+      text-transform: uppercase;
+      color: $color-blue;
+      font-weight: 500;
+    }
+    &--is-active {
+      background-color: $color-blue;
+      border-radius: rem(18px);
+      span {
+        color: #fff;
+        
+      }
+    }
+    &_paypal {
+      img {
+        width: rem(55px);
+      }
+    }
+  }
+}

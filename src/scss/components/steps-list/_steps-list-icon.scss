@@ -1,0 +1,12 @@
+.steps-list-icon {
+  // text-alig
+  text-align: center;
+  height: 22px;
+  // margin-bottom: rem(px);
+  svg {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    fill: $color-grey;
+  }
+}

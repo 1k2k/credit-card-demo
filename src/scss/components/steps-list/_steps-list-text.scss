@@ -1,0 +1,9 @@
+.steps-list-text {
+  display: inline-block;
+  // text-align: center;
+  span {
+    @include cutWord;
+    text-transform: uppercase;
+    font-size: rem(8px);
+  }
+}

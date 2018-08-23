@@ -1,0 +1,24 @@
+.payment-form-field {
+  &__label {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: rem(10px);
+    margin-bottom: rem(3px);
+    color: $color-grey;
+    display: flex;
+    align-items: center;
+    .label-tip {
+      margin-left: rem(2px);
+      width: rem(8px);
+    }
+  }
+  
+  &__inputs {
+    display: flex;
+    align-items: center;
+    span {
+      margin: 0 rem(12px);
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.payment-cart-action {
+  border-top: 1px solid #eee;
+  padding-top: rem(14px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  &__item {
+    &_total {
+      b, span {
+        display: block;
+        text-align: right;
+      }
+      span {
+        font-size: rem(8px);
+        font-weight: 500;
+      }
+    }
+  }
+}

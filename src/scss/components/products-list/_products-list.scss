@@ -1,0 +1,8 @@
+.products-list {
+  // height: rem(200px);
+  height: 100%;
+  overflow: auto;
+  &__item {
+    @include bottom(rem(5px));
+  }
+}

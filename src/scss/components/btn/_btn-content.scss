@@ -1,0 +1,21 @@
+.btn-content {
+  padding: rem(8px) rem(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__icon {
+    display: block;
+    margin-right: rem(5px);
+    img {
+      display: block;
+    }
+  }
+  &__text {
+    span {
+      display: block;
+      font-weight: 500;
+      font-size: rem(13px);
+      letter-spacing: 1.2px;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-synthesis: none;
+  -moz-font-feature-settings: 'kern';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: $default-font-size;
+}
+
+body {
+  color: #000;
+  font-family: $default-family;
+  min-width: 320px;
+  font-weight: 400;
+  font-size: rem($default-font-size);
+  line-height: 1.5;
+  overflow: auto;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  outline: none;
+  margin: 0;
+  font-family: $default-family;
+}
+
+textarea {
+  font-family: $default-family;
+}
+
+b {
+  font-weight: bold;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: $default-family;
+}
+
+svg {
+  display: block;
+}
+
+//For hide svg sprite
+.svg-sprite {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+}
+
+p {
+  @include bottom(rem(15px));
+}
+a {
+  color: $color-red;
+}
+.overflow-hidden {
+  overflow: hidden;
+}

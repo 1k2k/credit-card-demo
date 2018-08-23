@@ -1,0 +1,29 @@
+.btn {
+  display: inline-block;
+  width: auto;
+  background-color: darken($color-blue, 20%);
+  border-radius: 18px;
+  color: #fff;
+  &_fluid {
+    display: block;
+    width: 100%;
+  }
+  &_trans {
+    background-color: transparent;
+    border: 1px solid $color-blue;
+    .btn-content {
+      &__text span {
+        color: $color-blue;
+      }
+    }
+  }
+  &_small {
+    .btn-content {
+      height: rem(25px);
+      padding: 0 rem(20px);
+      &__text span {
+        font-size: rem(10px);
+      }
+    }
+  }
+}

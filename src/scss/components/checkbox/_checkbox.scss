@@ -1,0 +1,11 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+  &__trigger {
+    margin-right: rem(5px);
+  }
+  &__label {
+    display: block;
+    font-size: rem(12px);
+  }
+}

@@ -1,0 +1,32 @@
+.steps-list {
+  &__item {
+    display: block;
+    text-align: center;
+    @include bottom(rem(5px));
+    a {
+      display: block;
+      color: $color-grey;
+      text-decoration: none;
+    }
+    &:after {
+      content: "";
+      height: rem(30px);
+      width: 1px;
+      display: inline-block;
+      background-color: $color-grey;
+    }
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+    &--is-active {
+      .steps-list-text span {
+        color: $color-blue;
+      }
+      .steps-list-icon svg {
+        fill: $color-blue;
+      }
+    }
+  }
+}

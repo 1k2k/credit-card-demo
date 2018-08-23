@@ -1,0 +1,10 @@
+.card-headline {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  padding-bottom: rem(10px);
+  &__text {
+    color: $color-blue;
+    font-size: rem(15px);
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,16 @@
+.product-photo {
+  display: flex;
+  align-items: center;
+  // height: auto;
+  justify-content: center;
+  width: rem(70px);
+  text-align: center;
+  img {
+    width: 100%;
+  }
+  svg {
+    display: inline-block;
+    height: 22px;
+    fill: $color-blue;
+  }
+}
