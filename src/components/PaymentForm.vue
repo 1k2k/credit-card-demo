@@ -14,7 +14,7 @@
               <div class="product">
                 <div class="product__item product__item_photo">
                   <div class="product-photo">
-                    <img src="../assets/img/components/product-photo/product1.png" />
+                    <img src="/../assets/img/components/product-photo/product1.png" />
                   </div>
                 </div>
                 <div class="product__item">
@@ -39,7 +39,7 @@
               <div class="product">
                 <div class="product__item product__item_photo">
                   <div class="product-photo">
-                    <img src="../assets/img/components/product-photo/product2.png" />
+                    <img src="/../assets/img/components/product-photo/product2.png" />
                   </div>
                 </div>
                 <div class="product__item">
