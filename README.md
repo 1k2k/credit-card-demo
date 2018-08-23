@@ -1,4 +1,4 @@
-# form
+# Credit card 
 
 > Credit card demo with Vue.js
 
